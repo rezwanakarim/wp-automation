@@ -35,12 +35,19 @@ jobs:
         pip install selenium
         pip install python-dotenv
 
-    # Set environment variables 
+    # Install Chrome browser and ChromeDriver
+    - name: Install Chrome and ChromeDriver
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+        sudo apt-get install -y chromium-chromedriver
+
+    # Set up environment variables
     - name: Set up environment variables
       run: |
         echo "WP_USERNAME=${{ secrets.WP_USERNAME }}" >> .env
         echo "WP_PASSWORD=${{ secrets.WP_PASSWORD }}" >> .env
-        echo "CHROMEDRIVER_PATH=/usr/local/bin/chromedriver" >> .env
+        echo "CHROMEDRIVER_PATH=/usr/bin/chromedriver" >> .env
 
     # Run the test suite
     - name: Run Selenium tests
