@@ -1,5 +1,5 @@
 # wp-automation
-Automation test suite for the WP plugin
+Automation test suite for WP plugin
 
 ## Overview
 
