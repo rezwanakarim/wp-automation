@@ -29,7 +29,8 @@ The test suite includes the following scenarios:
 - WordPress with WP Dark Mode plugin installed
 
 ## Setup Instructions
-Name of the wordpress site wppool
+
+Install wordpress. Name the wordpress site "wppool", then install and activate WP Dark Mode plugin.
 
 ### 1. Clone the Repository
 
